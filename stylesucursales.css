@@ -1,0 +1,341 @@
+/*global*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*inicio*/
+
+body{
+    background-image: url(./imagenes/bg\ sucursales.png);
+    background-size: cover;
+    margin: auto;
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(61, 18, 70, 0.744);
+}
+
+nav{
+    margin: 25px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 1500px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+}
+
+ul li a{
+    margin:20px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(245, 237, 237);
+}
+
+a:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+
+}
+    
+
+.logo{
+    width: 50px;
+   
+  
+}
+
+
+
+
+.cajacontenedora{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cajamadre{
+    display: flex;
+    flex-direction: row;
+}
+
+.cajahijo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.ubicacion{
+    width: 400px;
+   
+
+}
+
+.imagensucursales1{
+    width: 400px;
+    position: absolute;
+    left: 790px;
+    top: 440px;
+
+
+
+}
+
+h2{
+    font-size: 40px;
+}
+
+p{
+    font-size: 26px;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+footer h2 { 
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer ul li a {
+    color: #fff;
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body{
+        background-image: url(./imagenes/bg\ sucursales.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+
+    
+        
+
+    }
+    
+    nav{ 
+        width: 370px;
+
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 330px;
+
+    
+
+    }
+    
+    
+    ul li {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin: 3px;
+        
+
+    }
+    
+
+    ul li a{
+        cursor: pointer;
+        margin:5px;
+        font-size: 10px;
+        color: rgb(245, 237, 237);
+    
+    }
+
+    a:hover{
+        cursor: pointer;
+        background-color: rgb(237, 231, 237);
+    }
+        
+    
+
+    .logo{
+        padding: 10px;
+        width: 40px;
+        height: 50px;
+    }
+
+
+
+    .cajacontenedora{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .cajamadre{
+        display: flex;
+        flex-direction:column;
+        }
+    
+    .cajahijo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    .ubicacion{
+        width: 350px;
+       
+    
+    }
+    
+    .imagensucursales1{
+        width: 230px;
+        position: absolute;
+        left:80px;
+        top: 1500px;
+    
+    
+    
+    }
+
+    .footerh2{
+        font-size: 20px;
+    }
+    
+    h2{
+        font-size: 30px;
+        color: #000000;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+        color: #000000;
+    }
+
+
+    footer{
+        margin-top: 490px;
+        background-color: black;
+        display: flex;
+        flex-direction:column;
+        height:auto;
+    
+    }
+    
+    
+    footer h2 { 
+        margin: 10px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    footer ul li a {
+        color: #fff;
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
