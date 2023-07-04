@@ -32,7 +32,7 @@ nav{
     display: flex;
     flex-direction: row;
     width: 1500px;
-    
+    height: 100px;    
 }
 
 ul {
