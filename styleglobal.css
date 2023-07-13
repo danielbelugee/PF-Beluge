@@ -1,0 +1,1463 @@
+/*global*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*inicio*/
+
+.bodyinicio {
+    background-image: url(./imagenes/bg-inicioo.jpg);
+    background-size: cover;
+    margin: auto;
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(61, 18, 70, 0.744);
+}
+
+nav {
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 1500px;
+    height: 100px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+ul li a {
+    margin: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(245, 237, 237);
+}
+
+a:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+
+}
+
+
+.logo {
+    width: 50px;
+
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 200px;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.animacion {
+    margin: 40px;
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+/*animaciones*/
+
+@keyframes animacion {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.iphone14 {
+    width: 400px;
+    margin: 20px;
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+}
+
+.i14 {
+    position: relative;
+    animation-name: subeBaja;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes subeBaja {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer h2 {
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer ul li a {
+    color: #fff;
+
+}
+
+.carousel-container {
+    border: 1px solid red;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*responsive 375px celular*/
+
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .body inicio {
+        background-image: url(./imagenes/bg-inicioo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        width: 370px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 330px;
+    }
+
+    ul li {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin: 3px
+    }
+
+    ul li a {
+        cursor: pointer;
+        margin: 5px;
+        font-size: 10px;
+        color: rgb(245, 237, 237);
+    }
+
+    a:hover {
+        cursor: pointer;
+        background-color: rgb(237, 231, 237);
+    }
+
+
+
+    .logo {
+        width: 60px;
+        padding: 10px;
+        height: 60px;
+    }
+
+    section div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .animacion {
+        margin: 10px;
+        margin-top: 60px;
+        text-decoration: double;
+        font-size: 40px;
+        animation-name: animacion;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes animacion {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+        100% {
+            opacity: 0;
+        }
+
+
+    }
+
+    .iphone14 {
+        margin: 30px;
+        width: 250px;
+        animation-name: iphone14;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes iphone14 {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+        100% {
+            opacity: 0;
+        }
+
+
+
+    }
+
+}
+
+.i14 {
+    width: 100px;
+    margin: 20px;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+}
+
+
+footer h2 {
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer ul li a {
+    color: #fff;
+
+}
+
+/* final de inicio*/
+
+/* accesorios*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bodyaccesorios{
+    background-image: url(./imagenes/aipods\ max.webp);
+    background-size: cover;
+    margin: auto;
+    @import url: ("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap");
+    @import url:("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    font-family: 'Poppins', 'Barlow Semi Condensed', sans-serif;
+    
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(61, 18, 70, 0.744);
+    
+}
+
+nav{
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 1500px;
+    height: 100px;    
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+}
+
+ul li a{
+    margin:20px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(245, 237, 237);
+}
+
+a:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+
+}
+    
+
+.logo{
+    width: 50px;
+}
+
+.airpods{
+    animation: bump-up 0.5s ease-in-out infinite alternate;
+    width: 200px;
+    margin: 30px;
+
+
+}
+
+@keyframes bump-up {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+    }
+
+
+section {
+    display: flex;
+    flex-direction:row;
+    margin: 100px;
+   
+}
+
+section div h2{
+    color: #ffffff;
+    font-size: 25px;
+    margin: 10px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    opacity: 0;
+    animation: fade-in 1s ease-in forwards;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+section h3{ 
+    color: #fff;
+    margin: 30px;
+    opacity: 0;
+    animation: fade-in 1s ease-in forwards;
+}
+
+.cajamadreacc{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cajahijoacc{
+    background-color:rgba(72, 117, 133, 0.575);
+    color: #fff;
+    text-align:left;
+    font-size: 22px;
+    padding: 25px;
+    margin: 20px;
+    opacity: 0;
+    animation: fade-in 1s ease-in forwards;
+}
+
+.cajahijoacc li{
+    padding: 10px;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction:column;
+
+}
+
+
+footer h2 { 
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer ul li a {
+    color: #fff;
+}
+
+@media screen and (max-width:768px){
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .bodyaccesorios{
+        background-image: url(./imagenes/aipods\ max.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    nav{
+        width: 370px;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 330px;
+    }
+    
+    ul li{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin: 3px
+    }
+
+    ul li a{
+        cursor: pointer;
+        margin:5px;
+        font-size: 10px;
+        color: rgb(245, 237, 237);
+        }
+    
+    a:hover{
+        cursor: pointer;
+        background-color: rgb(237, 231, 237);
+        }    
+        
+            
+    
+    .logo{
+        width: 40px;
+        padding: 10px;
+        height: 50px;
+    }
+
+    .airpods{
+        width: 200px;
+        margin: 30px;
+        animation: bump-up 0.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes bump-up {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-10px);
+        }
+
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        margin: auto;
+        
+       
+       
+    
+    }
+    
+    section div h2{
+        color: #ffffff;
+        font-size: 30px;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+    
+    
+    .cajamadreacc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin: 20px;
+    
+    }
+    
+    .cajahijoacc{
+        background-color:rgba(72, 117, 133, 0.575);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align:left;
+        font-size: 16px;
+        width: 260px;
+    }
+
+    .cajahijoacc li {
+        margin: 10px;
+    }
+    footer{
+        background-color: black;
+        display: flex;
+        flex-direction:column;
+        height: 200px;
+    
+    }
+    
+    
+    footer h2 { 
+        margin: 30px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    footer ul li a {
+        color: #fff;
+    
+    }
+
+}
+
+/*productos*/
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bodyproductos{
+    background-image: url(./imagenes/bg-inicioo.jpg );
+    background-size: cover;
+    margin: auto;
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(61, 18, 70, 0.744);
+    
+}
+
+nav{
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 1500px;
+    height: 100px;    
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+}
+
+ul li a{
+    margin:20px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(245, 237, 237);
+}
+
+a:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+
+}
+    
+
+.logo{
+    width: 50px;
+  
+}
+
+
+
+section{
+    
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width:auto;
+}
+
+.cajamadreproductos{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+
+.cajap1{
+    width: 200px;
+    margin: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    
+}
+
+.cajap1 h2{
+    font-size: 30px;
+    
+}
+
+.cajap1 p {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.iphones1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 80px;
+    width: 700px;
+}
+
+.telefono{
+    width: 340px;
+    margin: 10px;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction:column;
+    height: 200px;
+
+}
+
+
+footer h2 { 
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer ul li a {
+    color: #fff;
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body{
+        background-image: url(./imagenes/bg-inicioo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    nav{ 
+        width: 370px;
+
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 330px;
+
+    
+
+    }
+    
+    
+    ul li {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin: 3px;
+        
+
+    }
+    
+
+    ul li a{
+        cursor: pointer;
+        margin:5px;
+        font-size: 10px;
+        color: rgb(245, 237, 237);
+    
+    }
+
+    a:hover{
+        cursor: pointer;
+        background-color: rgb(237, 231, 237);
+    }
+        
+    
+
+    .logo{
+        padding: 10px;
+        width: 40px;
+        height: 50px;
+    }
+
+   section{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   }
+
+   .cajamadreproductos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+
+   }
+
+   .parrafoproductos{
+    color:#fff;
+   }
+
+   .telefono{
+    display: flex;
+    width: 300px;
+
+   }
+
+   .cajaproductosiphone{
+    display: flex;
+    flex-direction: column;
+    width: 1px;
+   }
+
+   .iphones1{
+    width: 220px;
+   }
+
+.footerproductos{
+    background-color: black;
+    display: flex;
+    flex-direction:column;
+    height:auto;
+
+}
+
+
+.footerproductos h2 { 
+    margin: 30px;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+footer ul li a {
+    color: #fff;
+
+}
+
+
+}
+/*Contactos*/
+/*global*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bodycontacto{
+    background-image: url(./imagenes/bgcontacto.png);
+    background-size: cover;
+    margin: auto;
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(61, 18, 70, 0.744);
+}
+
+nav{
+  margin: 25px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 1500px;
+  height: 100px;    
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  list-style: none;
+}
+
+ul li a{
+  margin:20px;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(245, 237, 237);
+}
+
+a:hover{
+  background-color: blueviolet;
+  cursor: pointer;
+
+}
+  
+
+.logo{
+  width: 50px;
+ 
+
+}
+
+.logocontacto1{
+    width: 100px;
+}
+
+.title1{
+    font-size: 45px;
+    margin: 100px;
+}
+
+.form_contacto {
+    display: flex;
+    flex-direction: column;
+    margin-top:10px;
+    color: #fff;
+    max-width: 400px;
+  }
+  .form_contacto_conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .form_contacto input {
+    min-height: 25px;
+    border-radius: 2px;
+    padding: 0px 5px;
+  }
+  .form_contacto input, .form_contacto textarea {
+    background-color: rgba(121, 80, 57, 0.5843137255);
+    border: none;
+    color: #fff;
+    padding: 0px 5px;
+  }
+  .form_contacto input:focus, .form_contacto textarea:focus {
+    outline-color: #e83151;
+  }
+  .form_contacto label {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .form_contacto h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    -moz-text-stroke: 2px black;
+    text-transform: uppercase;
+  }
+  .form_contacto span {
+    display: flex;
+    flex-direction: row;
+  }
+  .form_contacto span img {
+    width: 120px;
+    margin-top: 30px;
+  }
+  
+button{
+   width: 300px;
+   background-color: #ffffff00;
+   border: 10px;
+}
+
+.logoocontacto1{
+    width: 100px;
+
+}
+
+
+
+
+footer{
+    margin-top: 130px;
+    background-color: black;
+    display: flex;
+    flex-direction:column;
+
+}
+
+
+footer h2 { 
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer ul li a {
+    color: #fff;
+    }
+
+
+
+/*responsive*/
+
+@media screen  and (max-width: 768px) {
+  *{
+      margin: 0px;
+      padding: 0px;
+  }
+  
+  .bodycontacto{
+      background-image: url(./imagenes/bgcontacto.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  header{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      
+
+  
+      
+
+  }
+  
+  nav{ 
+      width: 370px;
+
+  }
+
+  ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      width: 330px;
+
+  
+
+  }
+  
+  
+  ul li {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+      margin: 3px;
+      
+
+  }
+  
+
+  ul li a{
+      cursor: pointer;
+      margin:5px;
+      font-size: 10px;
+      color: rgb(245, 237, 237);
+  
+  }
+
+  a:hover{
+      cursor: pointer;
+      background-color: rgb(237, 231, 237);
+  }
+      
+  
+
+  .logo{
+      width: 40px;
+      height: 50px;
+      padding: 10px;
+  }
+  }
+
+
+  footer{
+    background-color: black;
+    display: flex;
+    flex-direction:column;
+    height:auto;
+
+}
+
+
+footer h2 { 
+    margin: 30px;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer ul li a {
+    color: #fff;
+
+}
+
+/*Sucursal*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.bodysucursal{
+    background-image: url(./imagenes/bg\ sucursales.png);
+    background-size: cover;
+    margin: auto;
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(61, 18, 70, 0.744);
+}
+
+nav{
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 1500px;
+    height: 100px;    
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+}
+
+ul li a{
+    margin:20px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(245, 237, 237);
+}
+
+a:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+
+}
+    
+
+.logo{
+    width: 50px;
+   
+  
+}
+
+.cajacontenedorasucu{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    position: relative;
+    overflow: hidden;
+    font-size: 40px;
+}
+
+.cajamadresucu{
+    display: flex;
+    flex-direction: column;
+}
+
+.cajahijosucu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.ubicacion{
+    width: 400px;
+   
+
+}
+
+.sucursalescaja{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagensucursales1{
+    width: 200px;
+    
+   
+}
+
+
+
+.cajacontenedorasucu p{
+    font-size: 26px;
+    color: #050505;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+footer h2 { 
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer ul li a {
+    color: #fff;
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body{
+        background-image: url(./imagenes/bg\ sucursales.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+
+    
+        
+
+    }
+    
+    nav{ 
+        width: 370px;
+
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 330px;
+
+    
+
+    }
+    
+    
+    ul li {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin: 3px;
+    }
+    
+
+    ul li a{
+        cursor: pointer;
+        margin:5px;
+        font-size: 10px;
+        color: rgb(245, 237, 237);
+    }
+
+    a:hover{
+        cursor: pointer;
+        background-color: rgb(237, 231, 237);
+    }
+        
+    
+
+    .logo{
+        padding: 10px;
+        width: 40px;
+        height: 50px;
+    }
+
+
+
+    .cajacontenedora{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cajamadre{
+        display: flex;
+        flex-direction:column;
+        }
+    
+    .cajahijo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    .ubicacion{
+        width: 350px;
+       
+    
+    }
+    
+    .imagensucursales1{
+        width: 230px;
+        
+    
+    }
+
+    .footerh2{
+        font-size: 20px;
+    }
+    
+    h2{
+        font-size: 30px;
+        color: #000000;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+        color: #000000;
+    }
+
+
+    footer{
+        margin-top: 490px;
+        background-color: black;
+        display: flex;
+        flex-direction:column;
+        height:auto;
+    
+    }
+    
+    footer h2 { 
+        margin: 30px;
+        font-size: 20px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    
+    footer ul li a {
+        color: #fff;
+    
+    }
+}
+
+
